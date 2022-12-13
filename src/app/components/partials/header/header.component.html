@@ -15,15 +15,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Add product</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
+                <li class="nav-item" *ngIf="!isAuth">
+                    <a class="nav-link" href="/signup">Login</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
+
+                <li class="nav-item" *ngIf="isAuth">
+                    <a class="nav-link" (click)="logout()">Logout</a>
                 </li>
 
             </ul>

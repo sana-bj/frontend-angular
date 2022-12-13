@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/auth/login/login.component';
-import { SigninComponent } from './components/auth/signin/signin.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 import { AddProductComponent } from './components/shop/add-product/add-product.component';
 import { EditProductComponent } from './components/shop/edit-product/edit-product.component';
@@ -10,7 +10,7 @@ import { SingleProductComponent } from './components/shop/single-product/single-
 
 const routes: Routes = [
 
-  {path: 'signup', component:SigninComponent},
+  {path: 'signup', component:SignupComponent},
   {path: 'login', component:LoginComponent},
   {path: 'shop', component:ShopComponent},
   {path: 'add-product', component:AddProductComponent},
